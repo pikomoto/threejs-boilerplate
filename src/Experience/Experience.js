@@ -4,6 +4,7 @@ import Sizes from "../Utils/Sizes.js"
 import Time from '../Utils/Time.js'
 import Camera from './Camera.js'
 import Renderer from './Renderer'
+import World from './World/World.js'
 
 // Instance check for Singleton
 let instance = null
@@ -31,6 +32,7 @@ export default class Experience {
         this.scene = new THREE.Scene()
         this.camera = new Camera()
         this.renderer = new Renderer()
+        this.world = new World()
 
 
         // EventEmitter Resize trigger from Sizes class
